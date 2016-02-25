@@ -52,14 +52,18 @@ config.vm.network "forwarded_port", guest: 8000, host: 8000, ip: "127.0.0.1"</li
 <li>sudo pip3 install ipython</li>
 <li>sudo apt-get install python3-dev</li>
 <li>sudo pip3 install notebook</li>
+<li>sudo pip3 install jupyterhub</li>
+<li>sudo pip3 install bash_kernel</li>
 <li>cd /usr/local/share/jupyter</li>
 <li>sudo wget <a href="http://freyja.cs.cofc.edu/kernels.tar.gz">http://freyja.cs.cofc.edu/kernels.tar.gz</a>
 </li>
 <li>sudo tar xfvz kernels.tar.gz</li>
+<li>cd</li>
 <li>sudo apt-get install libzmq3-dev</li>
 <li>R</li>
 <li>Then type: install.packages(c('repr', 'IRkernel', 'IRdisplay'),repos = c('<a href="http://irkernel.github.io/">http://irkernel.github.io/</a>', '<a href="http://cran.us.r-project.org">http://cran.us.r-project.org</a>'))</li>
 <li>Then type: IRkernel::installspec()</li>
+<li>q()</li>
 <li>We are finally ready! If all has gone well, type jupyterhub, and then within Chrome go to http://localhost:8000</li>
 </ol>
 
