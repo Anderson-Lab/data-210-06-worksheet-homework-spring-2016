@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>06 Worksheet and Homework by Anderson-Lab</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>06 Worksheet and Homework</h1>
+        <p>DATA 210 - Spring 2016</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/Anderson-Lab/data-210-06-worksheet-homework-spring-2016" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/Anderson-Lab/data-210-06-worksheet-homework-spring-2016/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/Anderson-Lab/data-210-06-worksheet-homework-spring-2016/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h1>
+
+<ol>
+<li>Go into virtual box and add a port forward from port 8000 to port 8000 using 127.0.0.1. This can be done by modifying the file called Vagrantfile in your MyDataScienceToolbox folder. Uncomment out the line (remove #) that forwards the port 8888 to 8888 on 127.0.0.1. Specifically, add this line:
+config.vm.network "forwarded_port", guest: 8000, host: 8000, ip: "127.0.0.1"</li>
+<li>Then type vagrant reload</li>
+<li>sudo apt-get install python3-setuptools</li>
+<li>sudo easy_install3 pip</li>
+<li>sudo npm install -g configurable-http-proxy</li>
+<li>sudo pip3 install ipython</li>
+<li>sudo apt-get install python3-dev</li>
+<li>sudo pip3 install notebook</li>
+<li>cd /usr/local/share/jupyter</li>
+<li>sudo wget <a href="http://freyja.cs.cofc.edu/kernels.tar.gz">http://freyja.cs.cofc.edu/kernels.tar.gz</a>
+</li>
+<li>sudo tar xfvz kernels.tar.gz</li>
+<li>sudo apt-get install libzmq3-dev</li>
+<li>R</li>
+<li>Then type: install.packages(c('repr', 'IRkernel', 'IRdisplay'),repos = c('<a href="http://irkernel.github.io/">http://irkernel.github.io/</a>', '<a href="http://cran.us.r-project.org">http://cran.us.r-project.org</a>'))</li>
+<li>Then type: IRkernel::installspec()</li>
+<li>We are finally ready! If all has gone well, type jupyterhub, and then within Chrome go to http://localhost:8000</li>
+</ol>
+
+<h1>
+<a id="questions" class="anchor" href="#questions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Questions</h1>
+
+<ol>
+<li>Write a command to find the number of lines in iris.csv.</li>
+<li>Write a command that finds the number of columns in iris.csv.</li>
+<li>What are datatypes of columns in iris.csv and datatypes.csv?</li>
+<li>What is the purpose of csvstat?</li>
+<li>Find the means of each column in iris.csv?</li>
+<li>Find the median?</li>
+<li>Create a stacked histogram using the recipe given in the notes but change the countries to Switzerland, United_Kingdom, Yugoslavia.</li>
+<li>Change the y-axis so each word is capitalized.</li>
+<li>Create a unique density plot for each possible variable (Sex, Day, etc) showing the tip distribution using the recipe in class. What seems the most predictive in terms of tips? i.e., when should you work?</li>
+</ol>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/Anderson-Lab">Anderson-Lab</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
